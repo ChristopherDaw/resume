@@ -19,8 +19,8 @@
 \setlength{\tabcolsep}{0in}
 
 \titleformat{\section}{
-  \vspace{-4pt}\Large
-}{}{0em}{}[\vspace{-5pt}]
+  \large
+}{}{0em}{}[\vspace{-10pt}]
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -34,21 +34,21 @@
 }
 
 \newcommand{\resumeSubsection}[4]{
-  \vspace{-4pt}\item[]
+  \item[]
     \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} l r}
       \textbf{#1} & #2 \vspace{1pt} \\
       #3 & #4 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}
 }
 
 \newcommand{\resumeProject}[3]{
-  \vspace{-4pt}\item[]
+  \item[]
     \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} l r}
       \textbf{#1} & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-10pt}
     \begin{itemize}
         \item[] #3
-    \end{itemize}\vspace{-5pt}
+    \end{itemize}
 }
 
 %%%%%%%%%%%%%%%%%%
@@ -60,13 +60,14 @@
 % Heading %
 %%%%%%%%%%%
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c l c l c l}
-  \textbf{\Huge Christopher Daw} \\
+  \textbf{\Huge Christopher Daw} \vspace{2pt} \\
   925 20th Street Apt. 111, Bellingham, WA & $\bullet$ &
   dawc@wwu.edu & $\bullet$ & 626.375.2753 & $\bullet$ & pi.chrisdaw.net \\
 \end{tabular*}
 
+\vspace{2pt}
 \rule{\textwidth}{1pt}
-\vspace{-25pt}
+\vspace{-20pt}
 
 %%%%%%%%%%%%%
 % Education %
@@ -76,7 +77,9 @@
     \resumeSubsection
       {Western Washington University}{Bellingham, WA}
       {Bachelor of Science in Computer Science, Math Minor, Honors Program}{Expected: June 2020}
-  \end{itemize}\vspace{-10pt}
+  \end{itemize}
+
+\vspace{-15pt}
 
 %%%%%%%%%%
 % Skills %
@@ -87,7 +90,9 @@
       Linux $\bullet$ Communication $\bullet$ Collaboration \\
     Problem-solving $\bullet$ Leadership $\bullet$
       Working Knowledge in HTML, CSS, JavaScript, and PHP
-  \end{itemize}\vspace{-15pt}
+  \end{itemize}%\vspace{-15pt}
+
+\vspace{-15pt}
 
 %%%%%%%%%%%%%%
 % Experience %
@@ -115,6 +120,8 @@
       \end{itemize}
     \end{itemize}
 
+\vspace{-15pt}
+
 %%%%%%%%%%%%
 % Projects %
 %%%%%%%%%%%%
@@ -129,7 +136,9 @@
   \resumeProject
       {Facebook Message Analyzer}{2015 AP Computer Science Final Project}
       {Collaboratively developed a Java program to parse Facebook message history and display statistics related to activity and word frequency.}
-  \end{itemize}\vspace{-15pt}
+  \end{itemize}%\vspace{-15pt}
+
+\vspace{-15pt}
 
 %%%%%%%%%%%%%%
 % Activities %
@@ -142,7 +151,7 @@
       {President of A Capella Club}
     \resumeItem
       {Bass section leader in University Choir}
- \end{enumerate}\vspace{-15pt}
+ \end{enumerate}%\vspace{-15pt}
 
 %%%%%%%%%%%%%%%%%%%%%
 % Awards and Honors %
