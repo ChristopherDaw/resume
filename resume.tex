@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%
+% Resume a la Latex %
+% Chris Daw         %
+%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[11pt, letterpaper, margins=0.25in]{article}
+
+\usepackage{titlesec}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\Large
+}{}{0em}{}[\vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-4pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProject}[3]{
+  \vspace{-4pt}\item[]
+    \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} l r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+    \begin{itemize}
+        \item[]\small{ #3 }
+    \end{itemize}
+}
+
+\renewcommand{\labelitemii}{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c l c l c l}
+  \textbf{\Huge Christopher Daw} \\
+  925 20th Street Apt. 111, Bellingham, WA & $\bullet$ &
+  dawc@wwu.edu & $\bullet$ & 626.375.2753 & $\bullet$ & pi.chrisdaw.net \\
+\end{tabular*}
+
+\rule{\textwidth}{1pt}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Western Washington University}{Bellingham, WA}
+      {Computer Science Major, Math Minor, Honors Program; GPA: 3.78}{Expected: June 2020}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills}
+  \begin{itemize}[leftmargin=*]
+    \item[] Python (4 years) $\bullet$ Java (6 years) $\bullet$ C (2 years) $\bullet$
+      Linux $\bullet$ Communication $\bullet$ Collaboration \\
+    Problem-solving $\bullet$ Leadership $\bullet$
+      Working Knowledge in HTML, CSS, JavaScript, and PHP
+  \end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Junior Systems Administrator}{Bellingham, WA}
+      {WWU Computer Science Department}{May 2017 - Present}
+      \resumeItemListStart
+        \resumeItem{
+          Spearheaded development of scripts to automate OS upgrades and ease software updates and maintenance of ~200 lab machines}
+        \resumeItem{
+            Undertook efforts writing a support wiki to familiarize hundreds of incoming CS students with a Linux lab environment after noticing the lack of a centralized location for basic information}
+        \resumeItem{
+            Developed and maintained utility software to increase productivity of the systems admin staff}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Intern}{Stanford, CA}
+      {Stanford Electrical Engineering Dept.}{June - August 2015}
+      \resumeItemListStart
+        \resumeItem{
+            Independently designed and developed a user interface in Java and C to simplify use of a genomic data compression algorithm created by Mikel Hernaez, a postdoctoral researcher}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Programming Projects $\bullet$ github.com/ChristopherDaw}
+  \resumeSubHeadingListStart
+    \resumeProject
+      {Slack Team Dictionary}{2018-Present Personal Project (WIP)}
+      {Drastically decreased lock combo lookup times for systems admins at WWU by designing and developing an app utilizing a Flask web server to implement key-value pair based dictionaries in Slack.}
+  \resumeProject
+      {pi.chrisdaw.net}{2017-2018 Personal Project}
+      {Learned the basics of front and back end web development by building and hosting a full stack portfolio website for myself. Utilizes a Raspberry Pi, Python web server, SSL certificates, HTML, and CSS with more features in the works.}
+  \resumeProject
+      {Facebook Message Analyzer}{2015 AP Computer Science Final Project}
+      {Collaboratively developed a Java program to parse Facebook message history and display statistics related to activity and word frequency.}
+  \resumeSubHeadingListEnd
+
+%-----------ACTIVITIES-----------------
+
+
+%-------------------------------------------
+\end{document}
+
