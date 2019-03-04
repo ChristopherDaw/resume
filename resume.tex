@@ -3,7 +3,7 @@
 % Chris Daw         %
 %%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[11pt, letterpaper]{article}
+\documentclass[12pt, letterpaper]{article}
 
 \usepackage{titlesec}
 \usepackage{enumitem}
@@ -11,28 +11,33 @@
 \usepackage[empty]{fullpage}
 \usepackage[margin=0.675in]{geometry}
 
+%%%%%%%%%%%%%%
+% Formatting %
+%%%%%%%%%%%%%%
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\Large
-}{}{0em}{}[\vspace{-5pt}]
+}{}{0em}{}[\vspace{-8pt}]
 
-%-------------------------
-% Custom commands
+\renewcommand{\familydefault}{\sfdefault}
+
+%%%%%%%%%%%%%%%%%%%
+% Custom commands %
+%%%%%%%%%%%%%%%%%%%
 \newcommand{\resumeItem}[1]{
-  \item[$\bullet$]\small{
-    #1 \vspace{-2pt}
+  \item[$\bullet$]{
+    \small{#1} \vspace{-2pt}
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubsection}[4]{
   \vspace{-4pt}\item[]
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} l r}
       \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \small{#3} & \small{#4} \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -42,19 +47,18 @@
       \textbf{#1} & #2 \\
     \end{tabular*}\vspace{-5pt}
     \begin{itemize}
-        \item[]\small{ #3 }
-    \end{itemize}
+        \item[] \small {#3}
+    \end{itemize}\vspace{-3pt}
 }
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
+%%%%%%%%%%%%%%%%%%
+% Resume Content %
+%%%%%%%%%%%%%%%%%%
 \begin{document}
 
-%----------HEADING-----------------
+%%%%%%%%%%%
+% Heading %
+%%%%%%%%%%%
 \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} l c l c l c l}
   \textbf{\Huge Christopher Daw} \\
   925 20th Street Apt. 111, Bellingham, WA & $\bullet$ &
@@ -63,15 +67,19 @@
 
 \rule{\textwidth}{1pt}
 
-%-----------EDUCATION-----------------
+%%%%%%%%%%%%%
+% Education %
+%%%%%%%%%%%%%
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
+  \begin{itemize}[leftmargin=*]
+    \resumeSubsection
       {Western Washington University}{Bellingham, WA}
-      {Computer Science Major, Math Minor, Honors Program; GPA: 3.78}{Expected: June 2020}
-  \resumeSubHeadingListEnd
+      {Bachelor of Science in Computer Science, Math Minor, Honors Program; GPA: 3.78}{Expected: June 2020}
+  \end{itemize}
 
-%-----------SKILLS-----------------
+%%%%%%%%%%
+% Skills %
+%%%%%%%%%%
 \section{Skills}
   \begin{itemize}[leftmargin=*]
     \item[] Python (4 years) $\bullet$ Java (6 years) $\bullet$ C (2 years) $\bullet$
@@ -80,33 +88,37 @@
       Working Knowledge in HTML, CSS, JavaScript, and PHP
   \end{itemize}
 
-%-----------EXPERIENCE-----------------
+%%%%%%%%%%%%%%
+% Experience %
+%%%%%%%%%%%%%%
 \section{Work Experience}
-  \resumeSubHeadingListStart
-    \resumeSubheading
+  \begin{itemize}[leftmargin=*]
+    \resumeSubsection
       {Junior Systems Administrator}{Bellingham, WA}
       {WWU Computer Science Department}{May 2017 - Present}
-      \resumeItemListStart
+      \begin{itemize}
         \resumeItem{
           Spearheaded development of scripts to automate OS upgrades and ease software updates and maintenance of ~200 lab machines}
         \resumeItem{
             Undertook efforts writing a support wiki to familiarize hundreds of incoming CS students with a Linux lab environment after noticing the lack of a centralized location for basic information}
         \resumeItem{
             Developed and maintained utility software to increase productivity of the systems admin staff}
-      \resumeItemListEnd
+      \end{itemize}
 
-    \resumeSubheading
+    \resumeSubsection
       {Summer Intern}{Stanford, CA}
       {Stanford Electrical Engineering Dept.}{June - August 2015}
-      \resumeItemListStart
+      \begin{itemize}
         \resumeItem{
             Independently designed and developed a user interface in Java and C to simplify use of a genomic data compression algorithm created by Mikel Hernaez, a postdoctoral researcher}
-      \resumeItemListEnd
-  \resumeSubHeadingListEnd
+      \end{itemize}
+    \end{itemize}
 
-%-----------PROJECTS-----------------
+%%%%%%%%%%%%
+% Projects %
+%%%%%%%%%%%%
 \section{Programming Projects $\bullet$ github.com/ChristopherDaw}
-  \resumeSubHeadingListStart
+  \begin{itemize}[leftmargin=*]
     \resumeProject
       {Slack Team Dictionary}{2018-Present Personal Project (WIP)}
       {Drastically decreased lock combo lookup times for systems admins at WWU by designing and developing an app utilizing a Flask web server to implement key-value pair based dictionaries in Slack.}
@@ -116,9 +128,11 @@
   \resumeProject
       {Facebook Message Analyzer}{2015 AP Computer Science Final Project}
       {Collaboratively developed a Java program to parse Facebook message history and display statistics related to activity and word frequency.}
-  \resumeSubHeadingListEnd
+  \end{itemize}
 
-%-----------ACTIVITIES-----------------
+%%%%%%%%%%%%%%
+% Activities %
+%%%%%%%%%%%%%%
 \section{Extracurricular Activities}
   \begin{enumerate}[noitemsep]
     \resumeItem
@@ -129,14 +143,16 @@
       {Bass section leader in University Choir}
  \end{enumerate}
 
-%-----------AWARDS AND HONORS-----------------
-\section{Awards and Honors}
-  \begin{enumerate}[noitemsep]
-    \item[]\small\textbf
-      {AS Club Cup Winner (2018, A Capella Club)}
-    \item[]\small\textbf
-	  {AS Club Unsung Hero (2018)}
-  \end{enumerate}
+%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors %
+%%%%%%%%%%%%%%%%%%%%%
+%\section{Awards and Honors}
+%  \begin{enumerate}[noitemsep]
+%    \resumeItem
+%      {AS Club Cup Winner (2018, A Capella Club)}
+%    \resumeItem
+%	  {AS Club Unsung Hero (2018)}
+%  \end{enumerate}
 
 %-------------------------------------------
 \end{document}
