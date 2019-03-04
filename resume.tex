@@ -20,7 +20,7 @@
 
 \titleformat{\section}{
   \vspace{-4pt}\Large
-}{}{0em}{}[\vspace{-8pt}]
+}{}{0em}{}[\vspace{-5pt}]
 
 \renewcommand{\familydefault}{\sfdefault}
 
@@ -29,15 +29,15 @@
 %%%%%%%%%%%%%%%%%%%
 \newcommand{\resumeItem}[1]{
   \item[$\bullet$]{
-    \small{#1} \vspace{-2pt}
+    #1 \vspace{-2pt}
   }
 }
 
 \newcommand{\resumeSubsection}[4]{
   \vspace{-4pt}\item[]
     \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} l r}
-      \textbf{#1} & #2 \\
-      \small{#3} & \small{#4} \\
+      \textbf{#1} & #2 \vspace{1pt} \\
+      #3 & #4 \\
     \end{tabular*}\vspace{-5pt}
 }
 
@@ -45,10 +45,10 @@
   \vspace{-4pt}\item[]
     \begin{tabular*}{0.97\textwidth}{@{\extracolsep{\fill}} l r}
       \textbf{#1} & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
     \begin{itemize}
-        \item[] \small {#3}
-    \end{itemize}\vspace{-3pt}
+        \item[] #3
+    \end{itemize}\vspace{-5pt}
 }
 
 %%%%%%%%%%%%%%%%%%
@@ -66,6 +66,7 @@
 \end{tabular*}
 
 \rule{\textwidth}{1pt}
+\vspace{-25pt}
 
 %%%%%%%%%%%%%
 % Education %
@@ -74,8 +75,8 @@
   \begin{itemize}[leftmargin=*]
     \resumeSubsection
       {Western Washington University}{Bellingham, WA}
-      {Bachelor of Science in Computer Science, Math Minor, Honors Program; GPA: 3.78}{Expected: June 2020}
-  \end{itemize}
+      {Bachelor of Science in Computer Science, Math Minor, Honors Program}{Expected: June 2020}
+  \end{itemize}\vspace{-10pt}
 
 %%%%%%%%%%
 % Skills %
@@ -86,7 +87,7 @@
       Linux $\bullet$ Communication $\bullet$ Collaboration \\
     Problem-solving $\bullet$ Leadership $\bullet$
       Working Knowledge in HTML, CSS, JavaScript, and PHP
-  \end{itemize}
+  \end{itemize}\vspace{-15pt}
 
 %%%%%%%%%%%%%%
 % Experience %
@@ -121,14 +122,14 @@
   \begin{itemize}[leftmargin=*]
     \resumeProject
       {Slack Team Dictionary}{2018-Present Personal Project (WIP)}
-      {Drastically decreased lock combo lookup times for systems admins at WWU by designing and developing an app utilizing a Flask web server to implement key-value pair based dictionaries in Slack.}
+      {Drastically decreased lock combo lookup times for systems admins at WWU by designing and developing an app utilizing a Flask framework and PostgreSQL to implement key-value pair  dictionaries in Slack.}
   \resumeProject
       {pi.chrisdaw.net}{2017-2018 Personal Project}
       {Learned the basics of front and back end web development by building and hosting a full stack portfolio website for myself. Utilizes a Raspberry Pi, Python web server, SSL certificates, HTML, and CSS with more features in the works.}
   \resumeProject
       {Facebook Message Analyzer}{2015 AP Computer Science Final Project}
       {Collaboratively developed a Java program to parse Facebook message history and display statistics related to activity and word frequency.}
-  \end{itemize}
+  \end{itemize}\vspace{-15pt}
 
 %%%%%%%%%%%%%%
 % Activities %
@@ -141,7 +142,7 @@
       {President of A Capella Club}
     \resumeItem
       {Bass section leader in University Choir}
- \end{enumerate}
+ \end{enumerate}\vspace{-15pt}
 
 %%%%%%%%%%%%%%%%%%%%%
 % Awards and Honors %
